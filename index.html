@@ -196,7 +196,8 @@
     }
     
 
-    #technologies p {
+    #technologies p,
+    #process p {
       font-size: 1.25rem;
       max-width: 700px;
       text-align: center;
@@ -242,6 +243,26 @@
     
     .tech-item:hover svg {
         transform: scale(1.1);
+    }
+
+    /* Contact links styling */
+    a.contact-link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a.contact-link:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* Timeline image styling */
+    .timeline-image {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
 
     @media (max-width: 768px) {
@@ -323,7 +344,9 @@
 
     <section class="parallax-section">
         <h2>Tworzę nowoczesne i niezawodne rozwiązania</h2>
-        <p>Twoja firma zasługuje na solidne narzędzia, które usprawnią procesy i przyspieszą rozwój. Skorzystaj z wiedzy technicznej i doświadczenia, które prowadzą do skutecznych efektów.</p>
+        <p>Twoja firma zasługuje na solidne narzędzia, które usprawnią procesy i przyspieszą rozwój. 
+          Skorzystaj z wiedzy technicznej i doświadczenia, które prowadzą do skutecznych efektów. 
+          Z przyjemnością zapraszam do <a href="#contact">kontaktu</a> poniżej.</p>
       </section>
 
     <section id="services" data-aos="fade-up">
@@ -356,10 +379,10 @@
       <h2>Czemu wybrać mnie?</h2>
       <div class="highlight-box">
         <ul>
-          <li>Mam 10+ lat doświadczenia w rozwoju oprogramowania komercyjnego w środowisku międzynarodowym</li>
-          <li>Prezentuje podejście End-to-end - mam kompleksową wiedzę o każdym etapie rozwoju oprogramowania</li>
+          <li>Mam 11+ lat doświadczenia w rozwoju oprogramowania komercyjnego w środowisku międzynarodowym</li>
+          <li>Prezentuje podejście End-to-end - mam szeroką wiedzę o każdym etapie rozwoju oprogramowania</li>
           <li>Rozumiem potrzeby biznesu i potrafię przełożyć je zarówno na język wymagań jak i język kodu</li>
-          <li>Znam wagę planowania, wiem, że lepiej 2 razy pomyśleć i 3 razy zapytać, aby potem robić 1 raz</li>
+          <li>Znam wagę planowania, wiem, że lepiej 2 razy pomyśleć i 3 razy zapytać, aby potem zrobić za 1. razem</li>
           <li>Zwinne metodyki zarządzania projektami mam we krwi, to oznacza pewność transparentności mojej pracy</li>
         </ul>
       </div>
@@ -439,24 +462,50 @@
         </div>
       </div>
       
-      <p>
+      <p style="margin-top: 80px;">
         Powyższe logotypy reprezentują jedynie część moich umiejętności.
-        Bardzo możliwe, że nie znajdziesz tutaj wszystkiego czego potrzebujesz, ale nie znaczy to, że nie mogę Ci pomóc. 
-        Z przyjemnością ponownie zapraszam do <a href="#contact">kontaktu</a> celem omówienia szczegółów, oraz zapoznania się z moim <a href="#portfolio">portfolio</a> poniżej.
+        Bardzo możliwe, że nie znajdziesz tutaj wszystkiego czego szukasz, ale nie znaczy to, że nie mogę Ci pomóc. 
       </p>
     </section>
 
     <section id="process" data-aos="fade-up">
       <h2>Jak wygląda współpraca</h2>
-      <img class="timeline-image" src="assets/images/os.png" alt="Oś czasu współpracy">
-    </section>
-
-    <section id="portfolio" data-aos="fade-up">
-      <h2>Moje portfolio</h2>
+      <img class="timeline-image" width="" src="assets/images/os.png" alt="Oś czasu współpracy">
+      <p>
+        Współpraca z moimi klientami rozpoczyna się od rozmowy na temat naszych oczekiwań, 
+        oraz podjęcia decyzji o tym, czy będziemy razem pracować. Następnie przechodzimy do omówienia 
+        szczegółów projektu w toku następujących spotkań oraz warsztatów analitycznych. Kiedy już 
+        dojdziemy do wspólnego zrozumienia, co ma być zrobione, przechodzimy do fazy implementacji.
+        Cały proces zachodzi w metodykach zwinnych, takich jak Scrum, Kanban, lub innych, w zależności
+        od Twoich preferencji. Znaczy to, że będziemy mieli regularne spotkania, w których będziemy 
+        dyskutować o postępach, problemach, oraz kolejnych etapach. Po zakończeniu projektu, przechodzimy 
+        do fazy wsparcia i utrzymania, bądź przekazania wiedzy i kodu do Twojej firmy, w zależności od umowy.
+      </p>
     </section>
 
     <section id="contact" data-aos="fade-up">
       <h2>Skontaktuj się ze mną</h2>
+      <div class="tech-logos">
+        <a href="https://www.linkedin.com/in/maciej-tyra%C5%82a-6161936b/" target="_blank" rel="noopener noreferrer" class="tech-item contact-link">
+          <svg role="img" width="80" height="80" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="var(--text-color)"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span class="tech-name">LinkedIn</span>
+        </a>
+        
+        <a href="mailto:maciej.tyrala@bearmindit.pl" class="tech-item contact-link">
+          <svg role="img" width="80" height="80" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="var(--accent-light)"><title>Email</title><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+          <span class="tech-name">Email</span>
+        </a>
+        
+        <a href="https://czlowiek40.pl/" target="_blank" rel="noopener noreferrer" class="tech-item contact-link">
+          <svg role="img" width="80" height="80" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="var(--text-color)"><title>Blog</title><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg>
+          <span class="tech-name">Blog</span>
+        </a>
+        
+        <a href="https://github.com/m-tyrala" target="_blank" rel="noopener noreferrer" class="tech-item contact-link">
+          <svg role="img" width="80" height="80" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="var(--accent-light)"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          <span class="tech-name">GitHub</span>
+        </a>
+      </div>
     </section>
   </div>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
