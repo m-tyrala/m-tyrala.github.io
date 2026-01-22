@@ -87,12 +87,12 @@ header {
 }
 
 .cta-button {
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
   background-color: var(--accent-light);
   color: var(--bg-color);
-  padding: 0.75rem 1.5rem;
+  padding: 0.6rem 1.2rem;
   font-weight: 600;
-  border-radius: 12px;
+  border-radius: 10px;
   text-decoration: none;
   display: inline-block;
   transition: background-color 0.3s ease;
@@ -320,8 +320,13 @@ a.contact-link:hover {
   }
 
   .cta-button {
-    width: 100%;
+    width: auto;
     text-align: center;
+  }
+
+  .lang-switcher {
+    right: 0.5rem;
+    top: 0.5rem;
   }
 
   .services-grid {
@@ -338,6 +343,14 @@ a.contact-link:hover {
 
   h3 {
     font-size: 1.25rem;
+  }
+
+  .timeline-labels {
+    padding: 0 0.5rem;
+  }
+
+  .timeline-label {
+    font-size: 1rem;
   }
 }
 
